@@ -1,0 +1,15 @@
+<div class="col-md-3"></div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container-fluid">
+    <h2 class="display-5">Deseja excluir os Dados ?</h2>
+    <p class="lead">{{ usuario.id }}</p>
+    <p class="lead">{{ usuario.nome }}</p>
+    <p class="lead">{{ usuario.email }}</p>
+    <p class="lead"> <img [src]='usuario.foto'></p>
+
+    <p class="lead" >
+      <button type="button" (click)="deletar()" mdbBtn color="secondary" mdbWavesEffect>Excluir</button>
+      <button type="button" (click)="onCancel()" mdbBtn color="danger" mdbWavesEffect>Cancelar</button>
+    </p>
+  </div>
+</div>

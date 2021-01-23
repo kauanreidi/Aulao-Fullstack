@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+  
+      <div class="col-md-6">
+        <mdb-card>
+          <mdb-card-body>
+            <mdb-card-title>
+              <div >
+                <img [src]='usuario.foto'>
+              </div>
+            </mdb-card-title>
+  
+            <div class="md-form">
+              <input readonly=true [(ngModel)]="usuario.id" mdbInput type="text" id="form1" class="form-control">
+              <label for="form1" class="">Id Usuario</label>
+            </div>
+  
+            <div class="md-form">
+              <input [(ngModel)]="usuario.nome" mdbInput type="text" id="form1" class="form-control">
+              <label for="form1" class="">Nome Usuario</label>
+            </div>
+  
+            <div class="md-form">
+              <input [(ngModel)]="usuario.email" mdbInput type="text" id="form1" class="form-control">
+              <label for="form1" class="">E-mail Usuario</label>
+            </div>
+  
+            <button type="button" (click)="salvar()" mdbBtn color="secondary" mdbWavesEffect>Salvar</button>
+            <button type="button" (click)="onCancel()" mdbBtn color="danger" mdbWavesEffect>Cancelar</button>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+  
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  

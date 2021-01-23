@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-3">
+        <button type="button" mdbBtn size='lg' class="btn btn-primary" routerLink='/create'>
+            Novo Usuario &nbsp; <i class="fa fa-user-astronaut fa-2x"></i>
+        </button>
+      </div>
+
+      <div class="col-md-9">
+        <a href="#" class="list-group-item active menu">
+          Lista de usuarios
+        </a>
+        <div class="list-group" *ngFor="let u of usuarios">
+          <div class="list-group-item list-group-item-action">
+
+            <div class="col-md-3">
+              <img [src]='u.foto'>
+            </div>
+
+            <div class="col-md-9">
+              <p>
+                <b>Nome: </b> {{ u.nome }} <br>
+                <b>Email: </b>  {{ u.email }}
+              </p>
+
+              <button type="button"(click)="editar(u)" mdbBtn color='primary' mdbWavesEffect>Editar</button>
+              <button type="button"(click)="deletar(u)" mdbBtn color='danger' mdbWavesEffect>Deletar</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>

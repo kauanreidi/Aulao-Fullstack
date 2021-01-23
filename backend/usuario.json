@@ -1,0 +1,16 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "Renanzinho do youtubsdes",
+      "email": "renan@gmail.com",
+      "foto": "https://randomuser.me/api/portraits/men/27.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Renato",
+      "email": "Renato@gmail.com",
+      "foto": "https://randomuser.me/api/portraits/men/92.jpg"
+    }
+  ]
+}
